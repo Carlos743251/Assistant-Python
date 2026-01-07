@@ -1,4 +1,4 @@
-# 🎙️ Assistant-Python (KeepEar)
+# 🎙️ Assistant-Python
 
 **Assistant-Python** is a smart virtual assistant developed in Python. It leverages Google's **Gemini 1.5 Flash** model to process natural language and perform automated tasks via voice commands.
 
@@ -23,4 +23,3 @@ Follow these steps to get KeepEar up and running on your local machine.
 Open your terminal and run:
 ```bash
 git clone [https://github.com/Carlos743251/Assistant-Python.git](https://github.com/Carlos743251/Assistant-Python.git)
-cd Assistant-Python
