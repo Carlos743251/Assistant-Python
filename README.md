@@ -31,7 +31,6 @@ To ensure the microphone works correctly, you need specific audio tools dependin
 ```Bash
 sudo apt-get install python3-pyaudio portaudio19-dev libasound2-dev
 ```
-* On Windows: If you encounter errors installing PyAudio, download the .whl file matching your Python version from here and install it manually.
 
 ### 3. Install Python Libraries
 Install all required libraries with a single command:
@@ -39,3 +38,17 @@ Install all required libraries with a single command:
 ```Bash
 pip install speechrecognition google-generativeai pyttsx3 requests
 ```
+## 🗝️ API Key Configuration
+
+To enable the AI features, you need a Google Gemini API Key:
+
+### 1. Go to [Google AI Studio.] (https://aistudio.google.com/)
+
+### 2. Generate your API Key.
+
+### 3. In the file, find the following line and replace the placeholder:
+```Python
+
+genai.configure(api_key="YOUR_API_KEY_HERE")
+```
+⚠️ SECURITY NOTE: Never share your API Key publicly. It is recommended to use environment variables for better security.
