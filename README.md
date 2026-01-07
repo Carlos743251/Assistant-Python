@@ -42,13 +42,41 @@ pip install speechrecognition google-generativeai pyttsx3 requests
 
 To enable the AI features, you need a Google Gemini API Key:
 
-### 1. Go to [Google AI Studio.] (https://aistudio.google.com/)
+### 1. Go to [Google AI Studio.](https://aistudio.google.com/)
 
 ### 2. Generate your API Key.
 
-### 3. In the file, find the following line and replace the placeholder:
+### 3. In the `Assistant.py` file, find the following line and replace the placeholder:
 ```Python
-
 genai.configure(api_key="YOUR_API_KEY_HERE")
 ```
-⚠️ SECURITY NOTE: Never share your API Key publicly. It is recommended to use environment variables for better security.
+###  ⚠️ SECURITY NOTE: Never share your API Key publicly. It is recommended to use environment variables for better security.
+
+## 🛠️ Usage & Commands 
+###To start the assistant, run:
+```bash
+python main.py
+```
+###When the program displays "Listening...", you can use the following voice commands:
+
+| Command | Action |
+| :--- | :--- |
+| `time` | The assistant tells you the current time. |
+| `date` / `what day is it` | The assistant tells you today's date (DD/MM/YYYY). |
+| `search [your query]` | Sends your question to Gemini AI for an intelligent answer. |
+| `open youtube` | Opens the YouTube homepage in your default browser. |
+| `open google` | Opens the Google search engine in your default browser. |
+| `play [song/artist]` | Searches and plays the specific video on YouTube. |
+| `quote` | Fetches and recites a random motivational quote. |
+| `exit` / `cancel` | Stops the program and says goodbye. |
+
+## 🧠 Learning Mode
+If you say something KeepEar doesn't recognize, it will enter Learning Mode:
+
+### 1. The assistant will say: "I don't recognize that command..."
+
+### 2. It will ask you to repeat what you said to confirm the trigger.
+
+### 3. It will then ask what the reply should be.
+
+### 4. Done! The data is saved to responses.txt and the assistant will remember it next time.
