@@ -22,7 +22,7 @@ Follow these steps to get KeepEar up and running on your local machine.
 ### 1. Clone the Repository
 Open your terminal and run:
 ```bash
-git clone [https://github.com/Carlos743251/Assistant-Python.git](https://github.com/Carlos743251/Assistant-Python.git)
+git clone https://github.com/Carlos743251/Assistant-Python.git
 ```
 ### 2. Install System Dependencies
 To ensure the microphone works correctly, you need specific audio tools depending on your OS:
@@ -53,11 +53,11 @@ genai.configure(api_key="YOUR_API_KEY_HERE")
 ###  ⚠️ SECURITY NOTE: Never share your API Key publicly. It is recommended to use environment variables for better security.
 
 ## 🛠️ Usage & Commands 
-###To start the assistant, run:
+### To start the assistant, run:
 ```bash
 python main.py
 ```
-###When the program displays "Listening...", you can use the following voice commands:
+### When the program displays "Listening...", you can use the following voice commands:
 
 | Command | Action |
 | :--- | :--- |
