@@ -23,3 +23,19 @@ Follow these steps to get KeepEar up and running on your local machine.
 Open your terminal and run:
 ```bash
 git clone [https://github.com/Carlos743251/Assistant-Python.git](https://github.com/Carlos743251/Assistant-Python.git)
+```
+### 2. Install System Dependencies
+To ensure the microphone works correctly, you need specific audio tools depending on your OS:
+
+* On Linux (Ubuntu/Debian):
+```Bash
+sudo apt-get install python3-pyaudio portaudio19-dev libasound2-dev
+```
+* On Windows: If you encounter errors installing PyAudio, download the .whl file matching your Python version from here and install it manually.
+
+### 3. Install Python Libraries
+Install all required libraries with a single command:
+
+```Bash
+pip install speechrecognition google-generativeai pyttsx3 requests
+```
